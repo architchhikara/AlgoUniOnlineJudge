@@ -1,0 +1,15 @@
+<div class="filter-container">
+    <select #difficultySelect (change)="onFilterChange(difficultySelect.value)">
+        <option value="">All Difficulties</option>
+        <option value="EASY">Easy</option>
+        <option value="MEDIUM">Medium</option>
+        <option value="HARD">Hard</option>
+    </select>
+</div>
+
+<mat-list>
+    <mat-list-item *ngFor="let problem of filteredProblems">
+        <a [routerLink]="['/problems', problem.id]">{{ problem.title }}</a>
+        <p>{{ problem.difficulty }}</p>
+    </mat-list-item>
+</mat-list>

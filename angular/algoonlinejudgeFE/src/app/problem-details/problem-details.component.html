@@ -1,0 +1,19 @@
+<div *ngIf="problem" class="problem-details">
+  <h1>{{ problem?.title }}</h1>
+  <p>{{ problem?.difficulty }}</p>
+
+  <div class="description">
+    <h2>Description</h2>
+    <p>{{ problem?.description }}</p>
+  </div>
+
+  <div class="constraints">
+    <h2>Constraints</h2>
+    <p>{{ problem?.constraints }}</p>
+  </div>
+
+  <div class="submission-form">
+    <h2>Submit a Solution</h2>
+    <app-submission-form></app-submission-form>
+  </div>
+</div>

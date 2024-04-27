@@ -1,0 +1,17 @@
+<header>
+  <mat-toolbar color="primary">
+    <span>{{ title }}</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/problems">Problems</button>
+  </mat-toolbar>
+</header>
+<main>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+<footer>
+  <mat-toolbar color="primary">
+    <span>Copyright © 2023 AlgoOnlineJudge</span>
+  </mat-toolbar>
+</footer>
